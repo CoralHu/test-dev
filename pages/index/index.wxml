@@ -1,0 +1,182 @@
+<!-- 横向 -->
+<!-- <scroll-view class="scroll-view_W" scroll-x="true" style="width: 100%">
+    <view id="green" class="scroll-view-item_W bc_green">1</view>
+    <view id="red"  class="scroll-view-item_W bc_red">2</view>
+    <view id="yellow" class="scroll-view-item_W bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item_W bc_blue">4</view>
+</scroll-view> -->
+<!-- 竖向 -->
+<!-- <scroll-view class="scroll-view_H" scroll-y="true" style="height: 300rpx">
+    <view id="  green" class="scroll-view-item_H bc_green">1</view>
+    <view id="red"  class="scroll-view-item_H bc_red">2</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item_H bc_blue">4</view>
+</scroll-view> -->
+<!-- 滑块视图容器 -->
+<!-- <swiper indicator-dots="{{true}}"  autoplay="{{true}}" indicator-color="rgba(122,197,205,0.5)"
+circular='true' bindchange="mychange">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper> -->
+<!-- icon图标 -->
+<!-- <icon type='info' size="40" color="#FFFF00"></icon>
+<view wx:for="{{arrayType}}">
+      <icon type="{{item}}" size="40"></icon>  
+</view>   -->
+<!-- text文本 -->
+<!-- <view>
+  <text>aa\nsss</text>
+</view> -->
+<!-- progress 进度条 -->
+<!-- <progress percent='50' show-info stroke-width="30" color="#8B658B" active="{{true}}"/>  -->
+<!-- 按钮 -->
+<!-- <view wx:for="{{['default','primary','warn']}}">
+      <button type="{{item}}" >测试{{index}}</button>
+</view>
+<button type="primary" disabled size='mini'>测试</button>
+<button type="default" loading="{{true}}" hover-class="btclick">测试</button> -->
+<!-- 多选框 -->
+<!-- <view>
+  <checkbox-group bindchange="checkboxChange">
+    <checkbox value='1'>香蕉</checkbox>
+    <checkbox value='2' checked>苹果</checkbox>
+  </checkbox-group>
+</view>
+<checkbox-group   bindchange="checkboxChange">
+  <lable wx:for="{{boxs}}">
+     <checkbox value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</checkbox> 
+  </lable>
+</checkbox-group >  -->
+<!-- 输入框 -->
+<!-- <view class="cpadding">
+  姓名
+</view>
+<view class="cpadding cBorder">
+  <input type="text" placeholder="请输入姓名" focus maxlength='5' bindinput="myinputFunc" />
+</view>
+<view class="cpadding">
+  密码
+</view>
+<view class="cpadding cBorder">
+  <input type="text" password />
+</view>  -->
+<!-- lable标签  点中北京也会选中-->
+<!-- <view>
+    <checkbox-group class="group">
+        <label for="checkbox1">
+            <checkbox value="1" id="checkbox1">北京</checkbox>
+        </label>
+        <label>
+            <checkbox value="2">上海</checkbox>
+        </label>
+    </checkbox-group>
+</view>  -->
+<!-- 选择器三种模式：普通、时间、日期 -->
+<!-- <view class="cpadding">请选择国家</view>
+<view class='cpadding'>
+  <picker index='{{index}}' range='{{country}}' bindchange="bindPickerChange">
+    <view>{{country[index]}}</view>
+  </picker>
+</view>
+<view class="cpadding">请选择时间</view>
+<view class='cpadding'>
+  <picker mode="time" bindchange="bindPickerTime">
+    <view>{{time}}</view>
+  </picker>
+</view>
+<view class="cpadding">请选择日期</view>
+<view class='cpadding'>
+  <picker mode="date" start="2016-09-01" end="2018-09-01" bindchange="bindPickerDate">
+    <view>{{date}}</view>
+  </picker>
+</view> -->
+<!-- 级联菜单 -->
+<!-- <view class="cpadding">请选择省份</view>
+<view class='cpadding'>
+  <picker index='{{indexSheng}}' range='{{arraySheng}}' bindchange="myPicker1">
+    <view>{{arraySheng[indexSheng]}}</view>
+  </picker>
+</view>
+<view class="cpadding">请选择城市</view>
+<view class='cpadding'>
+  <picker index='{{indexShi}}' range='{{arrayShi[indexSheng]}}' bindchange="myPicker2">
+    <view>{{arrayShi[indexSheng][indexShi]}}</view>
+  </picker>
+</view> -->
+<!-- 单选 -->
+<!-- <view class='cpadding'>
+  <radio-group bindchange="radioChange">
+    <radio value='1' checked color='#ff0000'>男</radio>
+    <radio value='2'>女</radio>
+  </radio-group>
+</view> -->
+<!-- 滑动 -->
+<!-- <view class='cpadding'>
+<slider show-value  bindchange="sliderChange"></slider>
+</view> -->
+<!-- 开关switch -->
+<!-- <view class='cpadding'>
+  <switch type='switch' checked bindchange="switchChange"></switch>
+</view> -->
+<!-- textarea 多行输入框 -->
+<!-- <view class='cpadding'>
+  <textarea class='textarea' maxlength="-1" focus bindinput="textareaInput"></textarea>
+</view> -->
+<!-- 表单 -->
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+  <view>
+    <switch name="switch"/>
+  </view>
+  <view>
+    <slider name="slider" show-value ></slider>
+  </view>
+  <view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <view>
+    <textarea name="test" placeholder="请输入" />
+  </view>
+  <view>
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form> -->
+<!-- navigator 页面链接 -->
+<!-- <view class='cpadding'>
+  <navigator url='../test/test?name=hcode&age=18'>跳转到test</navigator>
+</view>
+<view class='cpadding'>
+  <navigator open-type='switchTab' url='../mine/mine'>切换到mine</navigator>
+</view> -->
+<!-- 音频 -->
+<!-- <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio20">设置当前播放时间为20秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button> -->
+<!-- 视频 -->
+<!-- <video src='{{videosrc}}' class='video1' enable-danmu="{{true}}" danmu-list="{{danmuList}}"    bindplay="play" bindtimeupdate="playing"></video> -->
+<!-- 图片 -->
+<!-- <view style='background:#900;font-size:0px;'>
+<image class="image1" mode="widthFix" src="https://gratisography.com/pictures/400_1.jpg"></image>
+</view> -->
+<!-- <canvas style="width:200px; height: 200px;" canvas-id="canvas1"></canvas>
+<canvas style="width:200px; height: 200px;" canvas-id="canvas2"></canvas>
+<button   bindtap='draw2'>绘画</button> -->
+
+
+<view class="progresswrap">
+  <slider class="drag" step="10" value="{{curTimeVal}}" max="{{duration}}" backgroundColor="#373636" activeColor="#FF1744" bindchange="slideBar" />
+</view>
+<!--控制按钮-->
+<view class="btns">
+  <view bindtap='innerplay'>
+    <image style="width:50px;height:50px" src="{{playSrc}}"></image>
+  </view>
+  <view bindtap='innerpause'>
+    <image style="width:50px;height:50px" src="{{pauseSrc}}"></image>
+  </view>
+</view>
